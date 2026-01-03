@@ -21,7 +21,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-white border-t border-gray-200 py-12 px-4 sm:px-6 lg:px-8">
+    <footer className="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 py-12 px-4 sm:px-6 lg:px-8 transition-colors duration-200">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
@@ -29,22 +29,22 @@ export default function Footer() {
               <div className="w-8 h-8 bg-[#0078D4] rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">N</span>
               </div>
-              <span className="text-xl font-semibold text-gray-900">NavyAI</span>
+              <span className="text-xl font-semibold text-gray-900 dark:text-white transition-colors duration-200">NavyAI</span>
             </div>
-            <p className="text-gray-600 text-sm">
+            <p className="text-gray-600 dark:text-gray-400 text-sm transition-colors duration-200">
               Unified access to the world's most powerful AI models.
             </p>
           </div>
 
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <h3 className="font-semibold text-gray-900 mb-4">{category}</h3>
+              <h3 className="font-semibold text-gray-900 dark:text-white mb-4 transition-colors duration-200">{category}</h3>
               <ul className="space-y-2">
                 {links.map((link) => (
                   <li key={link.name}>
                     <a
                       href={link.href}
-                      className="text-gray-600 hover:text-[#0078D4] transition-colors text-sm"
+                      className="text-gray-600 dark:text-gray-400 hover:text-[#0078D4] dark:hover:text-blue-400 transition-colors text-sm"
                     >
                       {link.name}
                     </a>
@@ -55,18 +55,18 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="pt-8 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-center">
-          <p className="text-gray-600 text-sm">
+        <div className="pt-8 border-t border-gray-200 dark:border-gray-700 flex flex-col sm:flex-row justify-between items-center transition-colors duration-200">
+          <p className="text-gray-600 dark:text-gray-400 text-sm transition-colors duration-200">
             © 2024 NavyAI. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 sm:mt-0">
-            <a href="#" className="text-gray-600 hover:text-[#0078D4] transition-colors">
+            <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-[#0078D4] dark:hover:text-blue-400 transition-colors">
               Twitter
             </a>
-            <a href="#" className="text-gray-600 hover:text-[#0078D4] transition-colors">
+            <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-[#0078D4] dark:hover:text-blue-400 transition-colors">
               GitHub
             </a>
-            <a href="#" className="text-gray-600 hover:text-[#0078D4] transition-colors">
+            <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-[#0078D4] dark:hover:text-blue-400 transition-colors">
               Discord
             </a>
           </div>

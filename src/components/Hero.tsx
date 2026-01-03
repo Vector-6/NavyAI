@@ -4,13 +4,13 @@ export default function Hero() {
   return (
     <section className="pt-20 pb-32 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto text-center">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight transition-colors duration-200">
           NavyAI - Unified Access to
           <br />
           Modern AI Models
         </h1>
 
-        <p className="text-xl sm:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
+        <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 mb-12 max-w-4xl mx-auto leading-relaxed transition-colors duration-200">
           Access a Universe of AI Models. NavyAI provides a single, unified API to access
           the world's most powerful AI models from OpenAI, Google, Mistral, and more.
         </p>
@@ -26,7 +26,7 @@ export default function Hero() {
 
           <a
             href="/docs/"
-            className="inline-flex items-center px-8 py-4 bg-white text-[#0078D4] font-semibold rounded-lg shadow-md hover:shadow-lg border-2 border-[#0078D4] transition-all duration-200 transform hover:-translate-y-0.5"
+            className="inline-flex items-center px-8 py-4 bg-white dark:bg-gray-800 text-[#0078D4] dark:text-blue-400 font-semibold rounded-lg shadow-md hover:shadow-lg border-2 border-[#0078D4] dark:border-blue-400 transition-all duration-200 transform hover:-translate-y-0.5"
           >
             View Documentation
           </a>

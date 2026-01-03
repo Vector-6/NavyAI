@@ -9,13 +9,13 @@ export default function Providers() {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white/50">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white/50 dark:bg-gray-800/50 transition-colors duration-200">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4 transition-colors duration-200">
             Access Leading AI Providers
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto transition-colors duration-200">
             One API to rule them all. Connect to the world's best AI models through a single integration.
           </p>
         </div>
@@ -24,12 +24,12 @@ export default function Providers() {
           {providers.map((provider, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg p-6 shadow-[0_1px_4px_rgba(0,0,0,0.1)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.15)] transition-all duration-200 border border-gray-100"
+              className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-[0_1px_4px_rgba(0,0,0,0.1)] dark:shadow-[0_1px_4px_rgba(0,0,0,0.3)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.15)] dark:hover:shadow-[0_4px_12px_rgba(0,0,0,0.4)] transition-all duration-200 border border-gray-100 dark:border-gray-700"
             >
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2 transition-colors duration-200">
                 {provider.name}
               </h3>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-600 dark:text-gray-400 text-sm transition-colors duration-200">
                 {provider.models}
               </p>
             </div>
@@ -37,7 +37,7 @@ export default function Providers() {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 dark:text-gray-400 mb-6 transition-colors duration-200">
             And many more providers added regularly
           </p>
           <a
