@@ -1,3 +1,5 @@
+import { FaDiscord } from "react-icons/fa";
+
 export default function Footer() {
   const footerLinks = {
     Product: [
@@ -57,16 +59,17 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-gray-200 dark:border-gray-700 flex flex-col sm:flex-row justify-between items-center transition-colors duration-200">
           <p className="text-gray-600 dark:text-gray-400 text-sm transition-colors duration-200">
-            © 2024 NavyAI. All rights reserved.
+            © 2026 NavyAI. All rights reserved.
           </p>
+
           <div className="flex space-x-6 mt-4 sm:mt-0">
-            <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-[#0078D4] dark:hover:text-blue-400 transition-colors">
-              Twitter
-            </a>
-            <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-[#0078D4] dark:hover:text-blue-400 transition-colors">
-              GitHub
-            </a>
-            <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-[#0078D4] dark:hover:text-blue-400 transition-colors">
+            <a
+              href="https://discord.api.navy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-[#0078D4] dark:hover:text-blue-400 transition-colors"
+            >
+              <FaDiscord className="w-5 h-5" />
               Discord
             </a>
           </div>

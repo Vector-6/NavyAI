@@ -7,11 +7,9 @@ export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
 
   const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'Docs', href: '/docs/' },
+    { name: 'Models', href: '/models/' },
+    { name: 'API Docs', href: '/docs/' },
     { name: 'Pricing', href: '/pricing/' },
-    { name: 'Dashboard', href: '/dashboard/' },
-    { name: 'Terms', href: '/terms/' },
   ];
 
   return (
